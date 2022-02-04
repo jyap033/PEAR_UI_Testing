@@ -26,7 +26,7 @@ public class LoginPage {
 	@FindBy(how=How.XPATH, using="//input[@id='Input_Email']") WebElement emailTextBox;
 	@FindBy(how=How.NAME, using="Input.Role") WebElement roleDropdown;
 	@FindBy(how=How.XPATH, using="//input[@id='Input_Password']") WebElement passwordTextBox;
-	@FindBy(how=How.XPATH, using="//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/input[1]") WebElement loginButton;
+	@FindBy(how=How.XPATH, using="//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[5]/input[1]") WebElement loginButton;
 
 	public void setEmail(String username) {
 		emailTextBox.sendKeys(username);

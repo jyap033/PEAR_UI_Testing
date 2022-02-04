@@ -6,23 +6,18 @@
     <classes>
       <class name="tests.LoginLogoutTest">
         <methods>
-          <include name="init" invocation-numbers="1 2 3 4"/>
+          <include name="init" invocation-numbers="0 1 2 3 4"/>
           <include name="setup"/>
           <include name="TerminateTest"/>
         </methods>
       </class> <!-- tests.LoginLogoutTest -->
+      <class name="tests.CreateRoleTest">
+        <methods>
+          <include name="init"/>
+          <include name="setup"/>
+          <include name="TerminateTest"/>
+        </methods>
+      </class> <!-- tests.CreateRoleTest -->
     </classes>
   </test> <!-- Chrometest(failed) -->
-  <test thread-count="5" name="Firefoxtest(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="tests.LoginLogoutTest">
-        <methods>
-          <include name="init" invocation-numbers="1 2 3 4"/>
-          <include name="setup"/>
-          <include name="TerminateTest"/>
-        </methods>
-      </class> <!-- tests.LoginLogoutTest -->
-    </classes>
-  </test> <!-- Firefoxtest(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

@@ -29,7 +29,11 @@ public class LoginLogoutTest extends TestBase{
 		{
 			System.out.println(e.getMessage());
 		}
-		System.out.println("AssertEquals Test Passed\n");
+
+
+
+
+		//Logout
 		HomePage homePage = PageFactory.initElements(driver, HomePage.class);
 		homePage.clickOnNavbarDropDownButton();
 		homePage.clickOnNavbarDropDown_LogOutButton();

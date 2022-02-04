@@ -18,7 +18,9 @@ public class HomePage {
 	@FindBy(how=How.XPATH, using="//a[contains(text(),'Manage Roles')]") WebElement manageRolesButton;
 	@FindBy(how=How.XPATH, using="//span[contains(text(),'Manage Centres')]") WebElement manageCentersButton;
 	@FindBy(how=How.XPATH, using="//span[contains(text(),'Manage Lists')]") WebElement manageListsButton;
-	
+	@FindBy(how=How.XPATH, using="//a[contains(text(),'Edit Roles')]") WebElement editRoleButton;
+
+
 	@FindBy(how=How.XPATH, using="//a[@id='navbarDropdownMenuLink']") WebElement navbarDropDownButton;
 	@FindBy(how=How.XPATH, using="//a[@id='manage']") WebElement navbarDropDown_EditProfileButton;
 	@FindBy(how=How.XPATH, using="//a[@id='logout']") WebElement navbarDropDown_LogOutButton;
@@ -39,6 +41,8 @@ public class HomePage {
 	public void clickOnManageListsButton() {
 		manageListsButton.click();
 	}
+	public void clickOnEditRoleButtonButton() {	editRoleButton.click();	}
+
 	public void clickOnNavbarDropDownButton() {
 		navbarDropDownButton.click();
 	}

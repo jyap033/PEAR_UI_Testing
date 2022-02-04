@@ -8,15 +8,20 @@
 <classes>
 <class name = "tests.TestBase"/>
 <class name = "tests.LoginLogoutTest"/>
+<class name = "tests.CreateRoleTest"/>
 </classes>
 </test>
+<!--
 
 <test name="Firefoxtest">
 <parameter name="browser" value="firefox"></parameter>
 <classes>
 <class name = "tests.TestBase"> </class>
 <class name = "tests.LoginLogoutTest"> </class>
+    <class name = "tests.CreateRoleTest"/>
+
 </classes>
 </test>
+-->
 
 </suite>
