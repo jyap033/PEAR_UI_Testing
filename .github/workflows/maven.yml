@@ -27,4 +27,4 @@ jobs:
       if: ${{ always() }}
       uses: scacap/action-surefire-report@v1
       with:
-        report_paths: '**/target/test-results/test/TEST-*.xml'
+        report_paths: '**/target/surefire-reports/TEST-TestSuite.xml'
