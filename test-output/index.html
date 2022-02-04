@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TestSuite" class="navigator-link">
-              <span class="suite-name border-passed">TestSuite</span>
+              <span class="suite-name border-failed">TestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestSuite" class="hide-methods failed suite-TestSuite"> (hide)</a> <!-- hide-methods failed suite-TestSuite -->
+                      <a href="#" panel-name="suite-TestSuite" class="show-methods failed suite-TestSuite"> (show)</a> <!-- show-methods failed suite-TestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="tests.CreateRoleTest" class="method navigator-link" hash-for-method="init">init</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,17 +118,7 @@
                     <div class="method-list-content passed suite-TestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="tests.LoginLogoutTest" class="method navigator-link" hash-for-method="init(daniel@gmail.com, Doctor!23, Doctor)">init(daniel@gmail.com, Doctor!23, Doctor)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TestSuite" title="tests.LoginLogoutTest" class="method navigator-link" hash-for-method="init(alan@gmail.com, Game!23, Game Therapist)">init(alan@gmail.com, Game!23, Game Therapist)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="tests.CreateRoleTest" class="method navigator-link" hash-for-method="init">init</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -124,12 +128,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="tests.LoginLogoutTest" class="method navigator-link" hash-for-method="init(tpg1@gmail.com, Guardian!23, Guardian)">init(tpg1@gmail.com, Guardian!23, Guardian)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestSuite" title="tests.LoginLogoutTest" class="method navigator-link" hash-for-method="init(jess@gmail.com, Supervisor!23, Supervisor)">init(jess@gmail.com, Supervisor!23, Supervisor)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="tests.LoginLogoutTest" class="method navigator-link" hash-for-method="init(jess@gmail.com, Supervisor!23, Supervisor)">init(jess@gmail.com, Supervisor!23, Supervisor)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestSuite" title="tests.LoginLogoutTest" class="method navigator-link" hash-for-method="init(daniel@gmail.com, Doctor!23, Doctor)">init(daniel@gmail.com, Doctor!23, Doctor)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="tests.LoginLogoutTest" class="method navigator-link" hash-for-method="init(tpg1@gmail.com, Guardian!23, Guardian)">init(tpg1@gmail.com, Guardian!23, Guardian)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestSuite -->
@@ -144,20 +153,54 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestSuite" class="panel TestSuite">
+          <div class="suite-TestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.CreateRoleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="init">
+                  </a> <!-- init -->
+                  <span class="method-name">init</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=97.0.4692.99)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;MSI&apos;, ip: &apos;172.20.144.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7a0c7f461b47ad95d2c7bf0b79304a72, clickElement {id=3799858f-5b0f-4e68-92a7-3451139aea06}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\jay_j\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54340}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54340/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (7a0c7f461b47ad95d2c7bf0b79304a72)] -&gt; xpath: //a[contains(text(),&apos;Edit Roles&apos;)]]
+Session ID: 7a0c7f461b47ad95d2c7bf0b79304a72
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at pages.HomePage.clickOnEditRoleButtonButton(HomePage.java:44)
+	at tests.CreateRoleTest.init(CreateRoleTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-failed -->
           <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">tests.LoginLogoutTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="init(daniel@gmail.com, Doctor!23, Doctor)">
-                  </a> <!-- init(daniel@gmail.com, Doctor!23, Doctor) -->
-                  <span class="method-name">init</span>
-                  <span class="parameters">(daniel@gmail.com, Doctor!23, Doctor)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="init(alan@gmail.com, Game!23, Game Therapist)">
@@ -176,33 +219,26 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="init(tpg1@gmail.com, Guardian!23, Guardian)">
-                  </a> <!-- init(tpg1@gmail.com, Guardian!23, Guardian) -->
-                  <span class="method-name">init</span>
-                  <span class="parameters">(tpg1@gmail.com, Guardian!23, Guardian)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="init(jess@gmail.com, Supervisor!23, Supervisor)">
                   </a> <!-- init(jess@gmail.com, Supervisor!23, Supervisor) -->
                   <span class="method-name">init</span>
                   <span class="parameters">(jess@gmail.com, Supervisor!23, Supervisor)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite-class-passed -->
-          <div class="suite-TestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.CreateRoleTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="init">
-                  </a> <!-- init -->
+                  <a name="init(daniel@gmail.com, Doctor!23, Doctor)">
+                  </a> <!-- init(daniel@gmail.com, Doctor!23, Doctor) -->
                   <span class="method-name">init</span>
+                  <span class="parameters">(daniel@gmail.com, Doctor!23, Doctor)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="init(tpg1@gmail.com, Guardian!23, Guardian)">
+                  </a> <!-- init(tpg1@gmail.com, Guardian!23, Guardian) -->
+                  <span class="method-name">init</span>
+                  <span class="parameters">(tpg1@gmail.com, Guardian!23, Guardian)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -265,33 +301,33 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'init')
-data.setCell(0, 2, 'tests.LoginLogoutTest')
-data.setCell(0, 3, 5523);
+data.setCell(0, 2, 'tests.CreateRoleTest')
+data.setCell(0, 3, 11450);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'init')
-data.setCell(1, 2, 'tests.CreateRoleTest')
-data.setCell(1, 3, 4407);
+data.setCell(1, 2, 'tests.LoginLogoutTest')
+data.setCell(1, 3, 5302);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'init')
 data.setCell(2, 2, 'tests.LoginLogoutTest')
-data.setCell(2, 3, 3449);
+data.setCell(2, 3, 4590);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'init')
 data.setCell(3, 2, 'tests.LoginLogoutTest')
-data.setCell(3, 3, 2349);
+data.setCell(3, 3, 3242);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'init')
 data.setCell(4, 2, 'tests.LoginLogoutTest')
-data.setCell(4, 3, 2243);
+data.setCell(4, 3, 2853);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'init')
 data.setCell(5, 2, 'tests.LoginLogoutTest')
-data.setCell(5, 3, 2154);
+data.setCell(5, 3, 2779);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -345,37 +381,39 @@ return data;
               <div class="chronological-class-name">tests.LoginLogoutTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">init(janice@gmail.com, Admin!23, Administrator)</span>
-                <span class="method-start">13618 ms</span>
+                <span class="method-start">18032 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">init(daniel@gmail.com, Doctor!23, Doctor)</span>
-                <span class="method-start">19143 ms</span>
+                <span class="method-start">23337 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">init(tpg1@gmail.com, Guardian!23, Guardian)</span>
-                <span class="method-start">22593 ms</span>
+                <span class="method-start">27928 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">init(alan@gmail.com, Game!23, Game Therapist)</span>
-                <span class="method-start">24837 ms</span>
+                <span class="method-start">30782 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">init(jess@gmail.com, Supervisor!23, Supervisor)</span>
-                <span class="method-start">27187 ms</span>
+                <span class="method-start">34024 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CreateRoleTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">init</span>
-                <span class="method-start">29347 ms</span>
+                <span class="method-start">36806 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.TestBase</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">TerminateTest</span>
-                <span class="method-start">33754 ms</span>
+                <span class="method-start">48270 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

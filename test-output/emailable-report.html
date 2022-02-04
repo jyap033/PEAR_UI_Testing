@@ -9,15 +9,40 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">TestSuite</th></tr>
-<tr><td><a href="#t0">Chrometest</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">33,898</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Chrometest</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">48,362</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrometest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.CreateRoleTest</td><td><a href="#m0">init</a></td><td rowspan="1">1643984339138</td><td rowspan="1">4407</td></tr><tr class="passedodd"><td rowspan="5">tests.LoginLogoutTest</td><td><a href="#m1">init</a></td><td rowspan="5">1643984328934</td><td rowspan="5">3449</td></tr><tr class="passedodd"><td><a href="#m2">init</a></td></tr><tr class="passedodd"><td><a href="#m3">init</a></td></tr><tr class="passedodd"><td><a href="#m4">init</a></td></tr><tr class="passedodd"><td><a href="#m5">init</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrometest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.CreateRoleTest</td><td><a href="#m0">init</a></td><td rowspan="1">1643989393893</td><td rowspan="1">11450</td></tr><tr><th colspan="4">Chrometest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">tests.LoginLogoutTest</td><td><a href="#m1">init</a></td><td rowspan="5">1643989387869</td><td rowspan="5">3242</td></tr><tr class="passedeven"><td><a href="#m2">init</a></td></tr><tr class="passedeven"><td><a href="#m3">init</a></td></tr><tr class="passedeven"><td><a href="#m4">init</a></td></tr><tr class="passedeven"><td><a href="#m5">init</a></td></tr></tbody>
 </table>
-<h2>Chrometest</h2><h3 id="m0">tests.CreateRoleTest#init</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.LoginLogoutTest#init</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>daniel@gmail.com</td><td>Doctor!23</td><td>Doctor</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.LoginLogoutTest#init</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>alan@gmail.com</td><td>Game!23</td><td>Game Therapist</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.LoginLogoutTest#init</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>janice@gmail.com</td><td>Admin!23</td><td>Administrator</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.LoginLogoutTest#init</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>tpg1@gmail.com</td><td>Guardian!23</td><td>Guardian</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.LoginLogoutTest#init</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>jess@gmail.com</td><td>Supervisor!23</td><td>Supervisor</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Chrometest</h2><h3 id="m0">tests.CreateRoleTest#init</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: headless chrome=97.0.4692.99)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;MSI&apos;, ip: &apos;172.20.144.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7a0c7f461b47ad95d2c7bf0b79304a72, clickElement {id=3799858f-5b0f-4e68-92a7-3451139aea06}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\jay_j\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54340}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54340/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (7a0c7f461b47ad95d2c7bf0b79304a72)] -&gt; xpath: //a[contains(text(),&apos;Edit Roles&apos;)]]
+Session ID: 7a0c7f461b47ad95d2c7bf0b79304a72
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at pages.HomePage.clickOnEditRoleButtonButton(HomePage.java:44)
+	at tests.CreateRoleTest.init(CreateRoleTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.LoginLogoutTest#init</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>alan@gmail.com</td><td>Game!23</td><td>Game Therapist</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.LoginLogoutTest#init</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>janice@gmail.com</td><td>Admin!23</td><td>Administrator</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.LoginLogoutTest#init</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>jess@gmail.com</td><td>Supervisor!23</td><td>Supervisor</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.LoginLogoutTest#init</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>daniel@gmail.com</td><td>Doctor!23</td><td>Doctor</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.LoginLogoutTest#init</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>tpg1@gmail.com</td><td>Guardian!23</td><td>Guardian</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

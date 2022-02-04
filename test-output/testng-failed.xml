@@ -4,13 +4,6 @@
   <test thread-count="5" name="Chrometest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="tests.LoginLogoutTest">
-        <methods>
-          <include name="init" invocation-numbers="0 1 2 3 4"/>
-          <include name="setup"/>
-          <include name="TerminateTest"/>
-        </methods>
-      </class> <!-- tests.LoginLogoutTest -->
       <class name="tests.CreateRoleTest">
         <methods>
           <include name="init"/>

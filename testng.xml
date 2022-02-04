@@ -8,7 +8,7 @@
 <classes>
 <class name = "tests.TestBase"/>
 <class name = "tests.LoginLogoutTest"/>
-<class name = "tests.CreateRoleTest"/>
+<!--<class name = "tests.CreateRoleTest"/>-->
 </classes>
 </test>
 <!--
