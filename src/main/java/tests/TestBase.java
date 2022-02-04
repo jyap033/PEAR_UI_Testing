@@ -62,9 +62,8 @@ public void setup(@Optional("Optional Parameter") String browser) throws Excepti
 		options.addArguments("--disable-gpu"); // applicable to window os only
 		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		options.addArguments("--no-sandbox"); // Bypass OS security model
-/*
 		options.addArguments("--headless");
-*/
+
 
 		//System.setProperty("webdriver.chrome.driver",chromeDriverPath);
 		driver = new ChromeDriver(options);

@@ -44,7 +44,7 @@ public class LoginLogoutTest extends TestBase{
 		Object[][] data = new Object[5][3];
 
 		data[0][0] = "janice@gmail.com";
-		data[0][1] = "Admin!23";
+		data[0][1] = "Admin!231";
 		data[0][2] = "Administrator";
 
 		data[1][0] = "daniel@gmail.com";
