@@ -1,3 +1,4 @@
+/*
 package tests;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -47,3 +48,4 @@ public class CreateRoleTest extends TestBase {
 
     }
 }
+*/

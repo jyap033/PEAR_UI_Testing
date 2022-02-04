@@ -1,19 +1,13 @@
 package tests;
 
-import org.openqa.selenium.*;
-import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.Assert;
 import org.testng.annotations.*;
-
-import java.io.IOException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
@@ -62,7 +56,7 @@ public void setup(@Optional("Optional Parameter") String browser) throws Excepti
 		options.addArguments("--disable-gpu"); // applicable to window os only
 		options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 		options.addArguments("--no-sandbox"); // Bypass OS security model
-		options.addArguments("--headless");
+		/*options.addArguments("--headless");*/
 
 
 		//System.setProperty("webdriver.chrome.driver",chromeDriverPath);
@@ -70,7 +64,6 @@ public void setup(@Optional("Optional Parameter") String browser) throws Excepti
 	}
 
 
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	driver.get("https://coremvc.fyp2017.com/Identity/Account/Login?ReturnUrl=%2F");
 
 }
@@ -78,7 +71,7 @@ public void setup(@Optional("Optional Parameter") String browser) throws Excepti
 
 @AfterTest
 public void TerminateTest() {
-	driver.close();
-
+	//TestBase.driver.close();
+	TestBase.driver.quit();
 }
 }

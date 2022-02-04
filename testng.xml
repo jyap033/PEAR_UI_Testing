@@ -3,7 +3,7 @@
 <suite name="TestSuite">
 
 
-<test name="Chrometest">
+<test name="Chrometest"parallel="tests">
 <parameter name="browser" value="chrome"></parameter>
 <classes>
 <class name = "tests.TestBase"/>

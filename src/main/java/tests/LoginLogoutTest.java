@@ -41,13 +41,13 @@ public class LoginLogoutTest extends TestBase{
 
 	@DataProvider
 	public Object[][] getData(){
-		Object[][] data = new Object[5][3];
+		Object[][] data = new Object[1][3];
 
 		data[0][0] = "janice@gmail.com";
 		data[0][1] = "Admin!23";
 		data[0][2] = "Administrator";
 
-		data[1][0] = "daniel@gmail.com";
+	/*	data[1][0] = "daniel@gmail.com";
 		data[1][1] = "Doctor!23";
 		data[1][2] = "Doctor";
 
@@ -61,7 +61,7 @@ public class LoginLogoutTest extends TestBase{
 
 		data[4][0] = "jess@gmail.com";
 		data[4][1] = "Supervisor!23";
-		data[4][2] = "Supervisor";
+		data[4][2] = "Supervisor";*/
 
 		return data;
 
