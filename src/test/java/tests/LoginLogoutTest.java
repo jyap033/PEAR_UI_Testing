@@ -11,6 +11,7 @@ public class LoginLogoutTest extends TestBase{
 
 	@Test(dataProvider = "getData")
 	public void init(String email, String password, String role) throws Exception{
+		System.out.println(email);
 		LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
 		loginpage.setEmail(email);
 		loginpage.setPassword(password);
