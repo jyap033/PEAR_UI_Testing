@@ -4,13 +4,13 @@
   <test thread-count="5" name="Chrometest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="tests.CreateRoleTest">
+      <class name="tests.LoginLogoutTest">
         <methods>
           <include name="init"/>
           <include name="setup"/>
           <include name="TerminateTest"/>
         </methods>
-      </class> <!-- tests.CreateRoleTest -->
+      </class> <!-- tests.LoginLogoutTest -->
     </classes>
   </test> <!-- Chrometest(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

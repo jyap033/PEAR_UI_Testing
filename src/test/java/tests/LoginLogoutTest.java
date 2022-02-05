@@ -1,12 +1,10 @@
 package tests;
-import org.testng.Assert;
-import org.testng.annotations.*;
-
-import pages.HomePage;
-import pages.LoginPage;
 
 import org.openqa.selenium.support.PageFactory;
-
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import pages.HomePage;
+import pages.LoginPage;
 
 
 public class LoginLogoutTest extends TestBase{

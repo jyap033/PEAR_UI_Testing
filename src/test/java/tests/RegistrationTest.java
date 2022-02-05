@@ -1,11 +1,10 @@
 package tests;
-import org.testng.Assert;
-import org.testng.annotations.*;
 
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
-import pages.EditRolesPage;
-import org.openqa.selenium.support.PageFactory;
 import pages.RegisterPage;
 
 public class RegistrationTest extends TestBase {

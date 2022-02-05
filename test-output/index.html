@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,32 @@
                     <div class="method-list-content passed suite-TestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="tests.LoginLogoutTest" class="method navigator-link" hash-for-method="init(alan@gmail.com, Game!23, Game Therapist)">init(alan@gmail.com, Game!23, Game Therapist)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TestSuite" title="tests.LoginLogoutTest" class="method navigator-link" hash-for-method="init(janice@gmail.com, Admin!23, Administrator)">init(janice@gmail.com, Admin!23, Administrator)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="tests.LoginLogoutTest" class="method navigator-link" hash-for-method="init(daniel@gmail.com, Doctor!23, Doctor)">init(daniel@gmail.com, Doctor!23, Doctor)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="tests.LoginLogoutTest" class="method navigator-link" hash-for-method="init(tpg1@gmail.com, Guardian!23, Guardian)">init(tpg1@gmail.com, Guardian!23, Guardian)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="tests.CreateRoleTest" class="method navigator-link" hash-for-method="init">init</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestSuite" title="tests.LoginLogoutTest" class="method navigator-link" hash-for-method="init(jess@gmail.com, Supervisor!23, Supervisor)">init(jess@gmail.com, Supervisor!23, Supervisor)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestSuite -->
@@ -122,15 +147,62 @@
           <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">tests.CreateRoleTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="init">
+                  </a> <!-- init -->
+                  <span class="method-name">init</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestSuite-class-passed -->
+          <div class="suite-TestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">tests.LoginLogoutTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="init(alan@gmail.com, Game!23, Game Therapist)">
+                  </a> <!-- init(alan@gmail.com, Game!23, Game Therapist) -->
+                  <span class="method-name">init</span>
+                  <span class="parameters">(alan@gmail.com, Game!23, Game Therapist)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="init(janice@gmail.com, Admin!23, Administrator)">
                   </a> <!-- init(janice@gmail.com, Admin!23, Administrator) -->
                   <span class="method-name">init</span>
                   <span class="parameters">(janice@gmail.com, Admin!23, Administrator)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="init(daniel@gmail.com, Doctor!23, Doctor)">
+                  </a> <!-- init(daniel@gmail.com, Doctor!23, Doctor) -->
+                  <span class="method-name">init</span>
+                  <span class="parameters">(daniel@gmail.com, Doctor!23, Doctor)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="init(tpg1@gmail.com, Guardian!23, Guardian)">
+                  </a> <!-- init(tpg1@gmail.com, Guardian!23, Guardian) -->
+                  <span class="method-name">init</span>
+                  <span class="parameters">(tpg1@gmail.com, Guardian!23, Guardian)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="init(jess@gmail.com, Supervisor!23, Supervisor)">
+                  </a> <!-- init(jess@gmail.com, Supervisor!23, Supervisor) -->
+                  <span class="method-name">init</span>
+                  <span class="parameters">(jess@gmail.com, Supervisor!23, Supervisor)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -145,11 +217,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;TestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;Chrometest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Chrometest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.TestBase&quot;/&gt;
       &lt;class name=&quot;tests.LoginLogoutTest&quot;/&gt;
+      &lt;class name=&quot;tests.CreateRoleTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Chrometest --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite --&gt;
@@ -163,7 +236,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Chrometest (2 classes)</span>
+                <span class="test-name">Chrometest (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -189,16 +262,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'init')
-data.setCell(0, 2, 'tests.LoginLogoutTest')
-data.setCell(0, 3, 2356);
+data.setCell(0, 2, 'tests.CreateRoleTest')
+data.setCell(0, 3, 4742);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'init')
+data.setCell(1, 2, 'tests.LoginLogoutTest')
+data.setCell(1, 3, 2827);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'init')
+data.setCell(2, 2, 'tests.LoginLogoutTest')
+data.setCell(2, 3, 2652);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'init')
+data.setCell(3, 2, 'tests.LoginLogoutTest')
+data.setCell(3, 3, 2578);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'init')
+data.setCell(4, 2, 'tests.LoginLogoutTest')
+data.setCell(4, 3, 2516);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'init')
+data.setCell(5, 2, 'tests.LoginLogoutTest')
+data.setCell(5, 3, 2360);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -213,18 +306,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.LoginLogoutTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setup</span>
-                <br/>
-                <span class="ignored-method-name">TerminateTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-TestSuite" class="panel">
@@ -233,25 +317,82 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.TestBase</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="chronological-class-name">tests.LoginLogoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.LoginLogoutTest</div> <!-- chronological-class-name -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">init(janice@gmail.com, Admin!23, Administrator)</span>
-                <span class="method-start">4982 ms</span>
+                <span class="method-start">4945 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TerminateTest</span>
+                <span class="method-start">7603 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">7896 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">init(daniel@gmail.com, Doctor!23, Doctor)</span>
+                <span class="method-start">11437 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TerminateTest</span>
+                <span class="method-start">14016 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">14449 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">init(tpg1@gmail.com, Guardian!23, Guardian)</span>
+                <span class="method-start">18005 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TerminateTest</span>
+                <span class="method-start">20832 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">21159 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">init(alan@gmail.com, Game!23, Game Therapist)</span>
+                <span class="method-start">24520 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TerminateTest</span>
+                <span class="method-start">26881 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">27306 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">init(jess@gmail.com, Supervisor!23, Supervisor)</span>
+                <span class="method-start">30735 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TerminateTest</span>
+                <span class="method-start">33251 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.TestBase</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
+              <div class="chronological-class-name">tests.CreateRoleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">33532 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">init</span>
+                <span class="method-start">37065 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
                 <span class="method-name">TerminateTest</span>
-                <span class="method-start">7342 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">41807 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
