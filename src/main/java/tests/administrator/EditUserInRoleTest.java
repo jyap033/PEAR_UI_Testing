@@ -37,6 +37,7 @@ public class EditUserInRoleTest extends TestBase {
         }
 
         EditRolesPage editRolesPage = PageFactory.initElements(driver, EditRolesPage.class);
+        Thread.sleep(1000);
         editRolesPage.clickOnCreateRoleButton();
 
         //Enters RoleName and click ‘Create Role’

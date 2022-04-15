@@ -51,8 +51,6 @@ public void setup(@Optional("Optional Parameter") String browser) throws Excepti
 
 		/*driver = new RemoteWebDriver(new URL(remote_url), foptions);*/
 		driver = new FirefoxDriver(foptions);
-
-
 	}
 	else{
 		WebDriverManager.chromedriver().setup();
