@@ -11,6 +11,41 @@
           <include name="TerminateTest"/>
         </methods>
       </class> <!-- tests.LoginLogoutTest -->
+      <class name="tests.administrator.CreateRoleTest">
+        <methods>
+          <include name="init"/>
+          <include name="setup"/>
+          <include name="TerminateTest"/>
+        </methods>
+      </class> <!-- tests.administrator.CreateRoleTest -->
+      <class name="tests.supervisor.AddPrescriptionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="init"/>
+          <include name="TerminateTest"/>
+        </methods>
+      </class> <!-- tests.supervisor.AddPrescriptionTest -->
+      <class name="tests.supervisor.ViewPatientTest">
+        <methods>
+          <include name="init"/>
+          <include name="setup"/>
+          <include name="TerminateTest"/>
+        </methods>
+      </class> <!-- tests.supervisor.ViewPatientTest -->
+      <class name="tests.administrator.RegistrationTest">
+        <methods>
+          <include name="init"/>
+          <include name="setup"/>
+          <include name="TerminateTest"/>
+        </methods>
+      </class> <!-- tests.administrator.RegistrationTest -->
+      <class name="tests.supervisor.ManagePatientInfoTest">
+        <methods>
+          <include name="setup"/>
+          <include name="init"/>
+          <include name="TerminateTest"/>
+        </methods>
+      </class> <!-- tests.supervisor.ManagePatientInfoTest -->
     </classes>
   </test> <!-- Chrometest(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->
