@@ -35,9 +35,10 @@ public class EditUserInRoleTest extends TestBase {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        Thread.sleep(2000);
 
         EditRolesPage editRolesPage = PageFactory.initElements(driver, EditRolesPage.class);
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         editRolesPage.clickOnCreateRoleButton();
 
         //Enters RoleName and click ‘Create Role’

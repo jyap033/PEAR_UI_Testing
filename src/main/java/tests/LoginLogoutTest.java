@@ -16,6 +16,7 @@ public class LoginLogoutTest extends TestBase{
 		loginpage.setPassword(password);
 		loginpage.dropDownChooseRole(role);
 		loginpage.clickOnLoginButton();
+		Thread.sleep(5000);
 		String curr_window_title = driver.getTitle();
 		try{
 			Assert.assertEquals(curr_window_title, expectedTitle);
