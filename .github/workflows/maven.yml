@@ -27,11 +27,8 @@ jobs:
         java-version: 1.7
     - name:  Install Google Chrome # Using shell script to install Google Chrome
       run:   |
-              chmod +x ./scripts/InstallChrome.sh
-                          ./scripts/InstallChrome.sh 
+              chmod +x ./chromeInstall.sh
+                          ./chromeInstall.sh
     - name: Build with Maven
       run: mvn test --file pom.xml
-    - name: Publish Test Report
-      if: ${{ always() }}
-      uses: scacap/action-surefire-report@v1
 
